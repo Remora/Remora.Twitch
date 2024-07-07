@@ -1,0 +1,21 @@
+<Project>
+    <PropertyGroup>
+        <LegalAuthor>Jarl Gullberg</LegalAuthor>
+        <LegalEmail>jarl.gullberg@gmail.com</LegalEmail>
+        <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    </PropertyGroup>
+
+    <!-- NuGet-related properties -->
+    <PropertyGroup>
+        <RepositoryUrl>https://github.com/Remora/Remora.Twitch</RepositoryUrl>
+        <RepositoryBranch>main</RepositoryBranch>
+
+        <PackageOutputPath>$(MSBuildThisFileDirectory)nuget</PackageOutputPath>
+        <PackageProjectUrl>https://github.com/Remora/Remora.Twitch</PackageProjectUrl>
+        <PackageTags>remora;twitch;api;</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Remora.Results.Analyzers" PrivateAssets="all" />
+    </ItemGroup>
+</Project>
